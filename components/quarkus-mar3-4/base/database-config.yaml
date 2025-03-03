@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: quarkus-mar3-4-database-config
+data:
+  VECTORDB_HOST: "quarkus-mar3-4-database"
+  VECTORDB_PORT: ""

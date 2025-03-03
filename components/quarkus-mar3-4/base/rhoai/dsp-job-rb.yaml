@@ -1,0 +1,12 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: quarkus-mar3-4-dsp-job-rolebinding
+subjects:
+  - kind: ServiceAccount
+    name: quarkus-mar3-4-dsp-job
+    namespace: quarkus-mar3-4
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: quarkus-mar3-4-dsp-job-role
